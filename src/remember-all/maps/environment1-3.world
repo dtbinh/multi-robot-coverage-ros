@@ -1,0 +1,42 @@
+# Author: Sushil Parti
+
+include "p3at.inc"
+include "floorplan.inc"
+
+name                    "Environment 1-3"
+interval_sim            100
+quit_time                 0
+resolution                0.025
+show_clock                0
+show_clock_interval     100
+threads                2
+
+# Load an environment bitmap
+floorplan
+( 
+  name "Environment 13"
+  bitmap "envi1.png"
+  size [34 30 1.0]
+  pose [0 0 0 0]
+)
+
+# Put three robots into the world
+pioneer3at
+(
+  name "robot1"
+  pose [0 2 0 45]
+)
+
+pioneer3at
+(
+  name "robot2"
+  pose [0 -1 0 0]
+)
+
+pioneer3at
+(
+  name "robot3"
+  pose [0 0 0 0]
+)
+
+

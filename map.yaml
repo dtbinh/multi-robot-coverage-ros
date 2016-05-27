@@ -1,0 +1,17 @@
+# map.yaml
+# Author: Sushil Parti
+# This file contains the meta data about map
+
+image: map.pgm
+
+#map resolution - metres/pixel
+resolution: 0.100000
+origin: [-14.412456, -14.873144, -nan]
+negate: 0
+
+#pixels with occupancy probability greater than this threshold are considerd completely occupied 
+occupied_thresh: 0.65
+
+#pixels with occupancy probability less than this threshold are considerd completely free 
+free_thresh: 0.196
+

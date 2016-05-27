@@ -1,0 +1,43 @@
+<!-- This file contains list of plugins for various frontier based allocations -->
+
+<library path="libFrontierPlugins">
+
+    <class name="NearestBasedAllocation" type="NearestBasedAllocation" base_class_type="ExplorationPlanner">
+      <description>
+        Performs simple, uncoordinated nearest-frontier exploration.
+      </description>
+    </class>
+
+    <class name="GreedyBasedAllocation" type="GreedyBasedAllocation" base_class_type="ExplorationPlanner">
+      <description>
+        Extends nearest-frontier to the multi-robot case by starting
+        synchronized wavefronts at each robots position.
+      </description>
+    </class>
+
+
+    <class name="RankBasedAllocation" type="RankBasedAllocation" base_class_type="ExplorationPlanner">
+      <description>
+        Implements the MinPos exploration algorithm presented in:
+        [A. Bautin and O. Simonin, “MinPos : A Novel Frontier Allocation
+        Algorithm for Multi-robot Exploration,” ICIRA, pp. 496–508, 2012.]
+      </description>
+    </class>
+
+
+    <class name="RankBasedExtention" type="RankBasedExtention" base_class_type="ExplorationPlanner">
+      <description>
+        Implements the MinPos exploration algorithm presented in:
+        [A. Bautin and O. Simonin, “MinPos : A Novel Frontier Allocation
+        Algorithm for Multi-robot Exploration,” ICIRA, pp. 496–508, 2012.]
+      </description>
+    </class>
+
+    <class name="CaseBasedAllocation" type="CaseBasedAllocation" base_class_type="ExplorationPlanner">
+      <description>
+        A new case based algorithm.
+      </description>
+    </class>
+
+</library>
+  
